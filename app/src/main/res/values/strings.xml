@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Brickwars</string>
+    <string name="title">Brickwars</string>
+    <string name="start">Start</string>
+    <string name="game_over">Game Over</string>
+    <string name="play_again">Play Again</string>
+</resources>

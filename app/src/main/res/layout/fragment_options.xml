@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:layout_editor_absoluteY="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black_transparent"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/ballOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/black_transparent"
+            android:text="Einstellungen"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="000000"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="201dp">
+
+            <TextView
+                android:id="@+id/character"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_transparent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Charakter"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <LinearLayout
+                android:id="@+id/characterSelect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/robot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/figur1farbe" />
+
+                <ImageButton
+                    android:id="@+id/monkey"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/monkey" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ball_select_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_transparent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Ball"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <LinearLayout
+                android:id="@+id/ballSelect"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ball1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ball" />
+
+                <ImageButton
+                    android:id="@+id/ball5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel4" />
+
+                <ImageButton
+                    android:id="@+id/ball6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel5" />
+
+                <ImageButton
+                    android:id="@+id/ball3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel2" />
+
+                <ImageButton
+                    android:id="@+id/ball4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel3" />
+
+                <ImageButton
+                    android:id="@+id/ball2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel1" />
+
+                <ImageButton
+                    android:id="@+id/ball7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/kugel6" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ball_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/black_transparent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Größe"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <LinearLayout
+                android:id="@+id/sizeSelect"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ballSizeMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:onClick="onClick"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/minus" />
+
+                <SeekBar
+                    android:id="@+id/ballSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:max="60"
+                    android:progress="30" />
+
+                <ImageButton
+                    android:id="@+id/BallSizePlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/ball_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_transparent"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Geschwindigkeit"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <LinearLayout
+                android:id="@+id/speedSelect"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ballSpeedMinus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/minus" />
+
+                <SeekBar
+                    android:id="@+id/ballSpeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:max="10"
+                    android:progress="2" />
+
+                <ImageButton
+                    android:id="@+id/ballSpeedPlus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/black_transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/plus" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+
